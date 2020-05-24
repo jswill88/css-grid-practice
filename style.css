@@ -1,0 +1,58 @@
+.grid-container {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.grid-container * {
+  box-sizing: border-box;
+}
+/* clearfix hack - prevents overflowing of floating elements */
+/* .row:before,
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+[class*='col-'] {
+  float: left;
+  min-height: 1px;
+  width: 16.66%;
+  background-color: rgb(11, 129, 104);
+  padding: 12px;
+  margin-right: 2%;
+  margin-top: 15px;
+  height: 100px;
+}
+[class*='col-']:last-of-type {
+  margin-right: 0;
+}
+.col-1 {
+  width: 15%;
+}
+.col-2 {
+  width: 32%;
+}
+.col-3 {
+  width: 49%;
+}
+.col-4 {
+  width: 66%;
+}
+.col-5 {
+  width: 83%;
+}
+.col-6 {
+  width: 100%
+}
+.row-1 {
+  height: 100px;
+}
+.row-2 {
+  height: 215px;
+}
+.row-3 {
+  height: 330px;
+}
+.empty {
+  background-color: transparent;
+}
